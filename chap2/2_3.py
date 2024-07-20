@@ -9,7 +9,6 @@ weight = weight * 0.453592
 
 meanHeight = np.mean(height)
 meanWeight = np.mean(weight)
-
 medianHeight = np.median(height)
 medianWeight = np.median(weight)
 stdHeight = np.std(height)
