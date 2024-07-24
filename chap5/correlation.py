@@ -22,8 +22,8 @@ plt.hist(df['target'], 25)
 plt.xlabel('target')
 
 sns.heatmap(data=df.corr().round(2), annot=True)
+plt.show()
 
-plt.clf()
 plt.subplot(1,2,1)
 plt.scatter(df['bmi'], df['target'])
 plt.xlabel('bmi')
@@ -33,9 +33,8 @@ plt.subplot(1,2,2)
 plt.scatter(df['s5'], df['target'])
 plt.xlabel('s5')
 plt.ylabel('target')
-# plt.show()
 
-X = pd.DataFrame(df[['bmi', 's5']], columns=['bmi', 's5'])
+X = pd.DataFrame(df[['bmi', 's5', 'bp', 's4']], columns=['bmi', 's5', 'bp', 's4'])
 y= df['target']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=5)
 
