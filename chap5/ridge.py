@@ -19,6 +19,7 @@ for alp in [0,1,5,10,20,30,50,100,1000]:
     plt.plot(X_train, rr.predict(X_train),color = 'red')
     plt.title('alpha = '+str(alp))
 
+# results fall of after alpha = 4
 alphas = np.linspace(0, 4, 50)
 r2Values = []
 for alp in alphas:
