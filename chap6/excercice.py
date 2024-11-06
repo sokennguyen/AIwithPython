@@ -52,3 +52,6 @@ knn_pred = knn.predict(X_test)
 cnf_matrix = metrics.confusion_matrix(y_test, knn_pred)
 print(cnf_matrix)
 print(metrics.accuracy_score(y_test, knn_pred))
+
+# --- 10 ---
+# The logistic regression model is better than the KNN model

@@ -16,7 +16,7 @@ n= xpd.size
 b = (term1 - n*xbar*ybar)/(term2 - n*xbar**xbar)
 a = ybar - b*xbar
 
-x = np.linspace(0,2,100)
+x = np.linspace(0,2,50)
 y = a + b*x
 plt.plot(x,y, color = 'black')
 plt.scatter(xpd,ypd)

@@ -46,4 +46,4 @@ plt.xlabel('k')
 plt.ylabel('Mean Error')
 plt.show()
 
-#k=7.6 and 16->17.7 provide the lowest errors
+#k=7.6 and 16->17.7 provide the lowest error
